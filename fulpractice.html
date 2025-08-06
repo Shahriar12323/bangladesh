@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+.subscribe-wrapper {
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: stretch; /* 👉 input + button দুটোকেই সমান height করবে */
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.email-input {
+  flex: 1;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.subscribe-btn {
+  background-color: #006747;
+  color: #fff;
+  border: none;
+  padding: 0 30px;   /* 👉 top/bottom padding 0 দিলাম, যাতে input height অনুসরণ করে */
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.subscribe-btn:hover {
+  background-color: #004e34;
+}
+
+
+</style>
+<body>
+  <div class="subscribe-wrapper">
+  <input type="email" placeholder="Enter your email here" class="email-input" />
+  <button class="subscribe-btn">Subscribe</button>
+</div>
+
+</body>
+</html>
+
